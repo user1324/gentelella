@@ -1,9 +1,8 @@
 #!/bin/bash
-echo "Listing available directories"
-ls
+echo "Workding directory is:"
+pwd
 echo "Remove previous NodeJS"
 yum -y remove nodejs
-rm -f /usr/local/bin/node
 
 echo "Installing new NodeJS"
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
