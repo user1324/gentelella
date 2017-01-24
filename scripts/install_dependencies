@@ -2,7 +2,7 @@
 echo "Listing available directories"
 ls
 echo "Remove previous NodeJS"
-yum remove -y nodejs
+yum -y remove nodejs
 rm -f /usr/local/bin/node
 
 echo "Installing new NodeJS"
