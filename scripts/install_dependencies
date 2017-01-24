@@ -1,7 +1,11 @@
 #!/bin/bash
 echo "Listing available directories"
 ls
-echo "Installing NodeJS"
+echo "Remove previous NodeJS"
+yum rm nodejs
+rm -f /usr/local/bin/node
+
+echo "Installing new NodeJS"
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum -y install nodejs npm
 npm --version
