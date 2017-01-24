@@ -47,6 +47,8 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('build', ['scripts', 'sass', 'sass-minify']);
+
 gulp.task('watch', function() {
   // Watch .html files
   gulp.watch('production/*.html', browserSync.reload);
