@@ -8,6 +8,4 @@ echo "Installing new NodeJS"
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum -y install nodejs npm
 npm --version
-npm install --save-dev
-
 echo "Done Installing"
