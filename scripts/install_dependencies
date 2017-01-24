@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install nodejs npm --enablerepo=epel
+yum install -y nodejs npm --enablerepo=epel
 npm --version
 npm install --save-dev
 
