@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Listing available directories"
+ls
+echo "Installing NodeJS"
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum -y install nodejs npm
 npm --version
