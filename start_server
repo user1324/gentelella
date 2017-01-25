@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Workding directory is:"
+pwd
+npm install --save-dev
+gulp
