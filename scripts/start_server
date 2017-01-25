@@ -1,8 +1,2 @@
 #!/bin/bash
-echo "Workding directory is:"
-pwd
-cd /var/www/html/
-echo "Current workding directory is:"
-pwd
-npm install --save-dev
-gulp
+service httpd start
