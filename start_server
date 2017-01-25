@@ -1,5 +1,11 @@
 #!/bin/bash
 echo "Workding directory is:"
 pwd
-npm install --save-dev
+
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PackageJson='\package.json'
+
+npm install $DIR$PackageJson --save-dev
+
 gulp
