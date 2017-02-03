@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "Workding directory is:"
 pwd
-echo "Remove previous NodeJS"
-yum -y remove nodejs
+# echo "Remove previous NodeJS"
+# yum -y remove nodejs
 
-echo "Installing new NodeJS"
-curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
-yum -y install nodejs npm
+# echo "Installing new NodeJS"
+# curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+# yum -y install nodejs npm
 npm --version
 
 yum install -y httpd
